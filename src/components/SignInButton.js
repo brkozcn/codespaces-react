@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@chakra-ui/react";
+import { Button, Flex, ButtonGroup} from "@chakra-ui/react";
 
 import {
     BrowserRouter,
@@ -8,29 +8,48 @@ import {
     Link,
   } from "react-router-dom";
 
+
 function SignInButton() {
     return(
-        <div >
-            
 
+<Flex>
+
+
+<Flex  >
             <Link to="counter">
-                <Button 
-            
-            width={300} 
-            height={40} 
-            marginTop={20}
-            outline={'none'}
-            backgroundColor={'transparent'}
-            borderRadius={5}
-            fontSize={18}
-            fontWeight={700}
-
-            
-            >
-                giriş yap
-            </Button>
+                <Button
+                width={300} 
+                height={10} 
+                marginTop={30}
+                borderRadius={5}
+                fontSize={18}
+                fontWeight={700}
+                variant={'outline'}
+                background="transparent"
+                color={'whiteAlpha.900'}
+                colorScheme='whiteAlpha'
+                >
+                GİRİŞ YAP
+                </Button>
             </Link>
-        </div>
+        </Flex>
+
+        
+
+
+
+        
+
+
+
+        
+
+
+</Flex>
+
+        
+
+        
     )
 }
 
@@ -53,6 +72,28 @@ export default SignInButton;
   color: rgba(255, 255, 255, 0.719);
   font-size: 18px;
   font-weight: 700;
+
+
+  <Flex  >
+            <Link to="counter">
+                <Button
+                //width={300} 
+                //height={40} 
+                //marginTop={30}
+                //backgroundColor={'red'}
+                //borderRadius={5}
+                //fontSize={18}
+                //fontWeight={700}
+                //borderColor={'red'}
+                background="transparent"
+                >
+                <Flex> 
+                    GİRİŞ YAP
+                </Flex>
+                </Button>
+            </Link>
+        </Flex>
+ 
 
 
  */
